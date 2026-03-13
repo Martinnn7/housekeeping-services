@@ -31,7 +31,6 @@ const Announcements = () => {
       setRole(data.role);
       setNotCheckedIn(false);
 
-      //fetching announcements
       const annRes = await fetch(`${API_URL}/announcements`, {
         headers: { token: localStorage.token },
       });

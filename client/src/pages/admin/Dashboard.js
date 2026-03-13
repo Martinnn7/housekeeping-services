@@ -371,6 +371,12 @@ const AdminDashboard = () => {
     setSelectedFacilitiesForAnnouncement([]);
   };
 
+    const handleEditCancel = () => {
+      setEditingId(null);
+      setEditTitle("");
+      setEditMessage("");
+  };
+
   async function fetchMyAnnouncements() {
     try {
       const res = await fetch(`${API_URL}/announcements/admin`, {
@@ -637,7 +643,7 @@ const AdminDashboard = () => {
                         <div className="flex justify-end gap-3">
                           <button
                             type="button"
-                            onClick={handleCancel}
+                            onClick={handleEditCancel}
                             className="text-gray-500 text-sm hover:text-gray-700 transition"
                           >
                             Cancel
