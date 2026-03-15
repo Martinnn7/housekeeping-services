@@ -306,7 +306,7 @@ const AddHousekeeper = () => {
   return (
     <div className="p-4 sm:p-6">
       <h2 className="text-xl sm:text-2xl font-poppins font-bold text-green-900 mb-4 sm:mb-6">
-        Add / Remove Housekeeper {role !== "superadmin" && `(${facility})`}
+        Manage Housekeepers {role !== "superadmin" && `(${facility})`}
       </h2>
 
       <div className="flex flex-col gap-3 sm:gap-4 max-w-md mx-auto mb-8 sm:mb-10">
